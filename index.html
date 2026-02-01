@@ -1,3 +1,8 @@
+<script>
+    function showImage() {
+      document.getElementById("myImage").style.display = "block";
+    }
+</script>
 <style>
 .heart{
     position: absolute;
@@ -33,20 +38,23 @@
     }
 
 /* 1. Ensure the container (the body) takes up the full screen height */
-    html, body {
-        height: 100%;
-        display: flex; /* Makes the body a flex container */
-        justify-content: flex-start; /* Horizontally centers content */
-        align-items: center; /* Vertically centers content */
-        font-family: sans-serif;
-    }
+    body {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+  background: #fff;
+}
 
-    /* 2. Style for the actual text element */
-    .center-text {
-        text-align: center; /* Ensures the text inside the div is centered */
-        color:#b323d0;
-        font-size: 50pt; /* Adjust font size as needed */
-    }
+.wrapper {
+  text-align: center;
+  padding-top: 50px; /* pushes everything down from the top */
+}
+
+.center-text {
+  color: #b323d0;
+  font-size: 50pt;
+  margin-bottom: 30px;
+}
 </style>
 
     <div class="waterfall">
@@ -67,16 +75,12 @@
         <div class="heart">❤️</div>
     </div>
 <body>
+  <div class="wrapper">
     <h1 class="center-text">Will You be my Valentine?</h1>
-    <button onclick="showImage()">Yes ❤️</button>
-  <br />
-  <img id="myImage" src="StarbucksPop.jpg">
-
-  <script>
-    function showImage() {
-      document.getElementById("myImage").style.display = "block";
-    }
-  </script>
-
+    <button onclick="showImage()">Yes 💓</button>
+    <br />
+    <img id="myImage" src="StarbucksPop.jpg" alt="Surprise Image" style="display:none;">
+    <br />
     <button onclick="alert('You\'re not allowed to say no.')">No. (please don't😭)</button>
+  </div>
 </body>
