@@ -26,6 +26,12 @@
     100% { transform: translateY(100vh) rotate(360deg); opacity: 0; }
 }
 
+ #myImage {
+      display: none;
+      width: 300px;
+      margin-top: 20px;
+    }
+
 /* 1. Ensure the container (the body) takes up the full screen height */
     html, body {
         height: 100%;
@@ -62,4 +68,15 @@
     </div>
 <body>
     <h1 class="center-text">Will You be my Valentine?</h1>
+    <button onclick="showImage()">Yes ❤️</button>
+  <br>
+  <img id="myImage" src="your-image-url.jpg" alt="Surprise Image">
+
+  <script>
+    function showImage() {
+      document.getElementById("myImage").style.display = "block";
+    }
+  </script>
+
+    <button onclick="alert('You\'re not allowed to say no.')">No. (please don't😭)</button>
 </body>
