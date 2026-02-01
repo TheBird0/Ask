@@ -24,16 +24,48 @@
     0% { transform: translateY(0) rotate(0deg); opacity: 1; }
     100% { transform: translateY(100vh) rotate(360deg); opacity: 0; }
 }
+
+/* 1. Ensure the container (the body) takes up the full screen height */
+    html, body {
+        height: 100%;
+        margin: 0; /* Removes default browser margin */
+        display: flex; /* Makes the body a flex container */
+        justify-content: center; /* Horizontally centers content */
+        align-items: center; /* Vertically centers content */
+        background-color: #f0f0f0; /* Optional: adds a background color */
+        font-family: sans-serif;
+    }
+
+    /* 2. Style for the actual text element */
+    .center-text {
+        text-align: center; /* Ensures the text inside the div is centered */
+        padding: 20px;
+        border: 1px solid #ccc;
+        background-color: white;
+        color:#b323d0
+    }
 </style>
-<h1 style="text-align: center; color:#b323d0">Will You be my Valentine?</h1>
-<br />
-<br />
-<div class="waterfall">
-    <div class="heart">❤️</div>
-    <div class="heart">❤️</div>
-    <div class="heart">❤️</div>
-    <div class="heart">❤️</div>
-    <div class="heart">❤️</div>
-    <div class="heart">❤️</div>
-    <div class="heart">❤️</div>
-</div>
+<body>
+    <br />
+    <br />
+    <br />
+    <br />
+    <h1 class="center-text">Will You be my Valentine?</h1>
+    <div class="waterfall">
+        <div class="heart">❤️</div>
+        <div class="heart">❤️</div>
+        <div class="heart">❤️</div>
+        <div class="heart">❤️</div>
+        <div class="heart">❤️</div>
+        <div class="heart">❤️</div>
+        <div class="heart">❤️</div>
+        <div class="heart">❤️</div>
+        <div class="heart">❤️</div>
+        <div class="heart">❤️</div>
+        <div class="heart">❤️</div>
+        <div class="heart">❤️</div>
+        <div class="heart">❤️</div>
+        <div class="heart">❤️</div>
+        <div class="heart">❤️</div>
+    </div>
+</body>
