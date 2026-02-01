@@ -1,7 +1,7 @@
 <style>
 .heart{
     position: absolute;
-    align-items: top;
+    top: 0;
     animation: fall linear infinite;
 }
 
@@ -22,7 +22,7 @@
 .heart:nth-child(15){ left: 35%; animation-duration: 5s; animation-delay: 1.2s; }
 
 @keyframes fall{
-    0% { transform: translateY(0) rotate(0deg); opacity: 1; }
+    0% { transform: translateY(0%) rotate(0deg); opacity: 1; }
     100% { transform: translateY(100vh) rotate(360deg); opacity: 0; }
 }
 
@@ -44,7 +44,6 @@
     }
 </style>
 <body>
-    <h1 class="center-text">Will You be my Valentine?</h1>
     <div class="waterfall">
         <div class="heart">❤️</div>
         <div class="heart">❤️</div>
@@ -62,4 +61,5 @@
         <div class="heart">❤️</div>
         <div class="heart">❤️</div>
     </div>
+    <h1 class="center-text">Will You be my Valentine?</h1>
 </body>
